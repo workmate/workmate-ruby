@@ -1,13 +1,9 @@
 == Installation
-  $ gem install gcal-ruby
+  $ gem install workmate
   
 == Using
-  require 'gcal'
+  require 'workmate'
   
-  client = GCal::Client.new(api_key, api_secret, oauth_token, oauth_secret)
-  client.all_calendars                  # returns all user calendars
-  client.own_calendars                  # returns user owned calendars
-  client.events(calendar.id)            # returns events in calendar
-  
-  # retrieving events with options
-  client.events(calendar.id, :start_time => 1.month.ago, :timezone => 'Europe/Moscow')
+  client = Workmate::Client.new(api_key, api_secret, oauth_token)
+  client.me                   # returns current user
+  client.user(user_id)        # returns user by Id
