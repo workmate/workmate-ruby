@@ -2,11 +2,11 @@ require 'json'
 require 'oauth2'
 module Workmate
   class Client
-    BASE_URL = 'http://localhost.localdomain:3000'
+    BASE_URL = 'https://workmateapp.com'
     API_URL = "#{BASE_URL}/api"
     
-    def initialize(client_id, client_secret, token = nil)
-      @client = OAuth2::Client.new(client_id, client_secret, :site => BASE_URL)
+    def initialize(client_id, client_secret, token = nil, url = BASE_URL)
+      @client = OAuth2::Client.new(client_id, client_secret, :site => url)
       @token = OAuth2::AccessToken.from_hash(@client, access_token: token)
     end
     

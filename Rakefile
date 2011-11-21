@@ -3,7 +3,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('workmate', '0.1.0') do |p|
+Echoe.new('workmate', '0.1.1') do |p|
   p.description    = "Ruby library for Workmate API."
   p.url            = "http://github.com/workmate/workmate-ruby"
   p.author         = "Iskander Haziev"
