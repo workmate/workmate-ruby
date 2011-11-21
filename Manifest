@@ -1,0 +1,8 @@
+CHANGELOG
+LICENSE
+Manifest
+README.rdoc
+Rakefile
+init.rb
+lib/workmate.rb
+lib/workmate/client.rb
